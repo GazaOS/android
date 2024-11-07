@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1011bf85_e7f8ce40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-11-07T22:25:30Z",
+      "side": 1,
+      "message": "builds, boots and seems good on Xiaomi sm8459",
+      "revId": "596a5d1bd8e81bb155ef6d90608af06b4f0899d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
