@@ -16,6 +16,24 @@
       "message": "what about hardware/qcom/keymaster? are we gonna add it back or remove keymaster include from os_pickup_aosp.mk?",
       "revId": "277cf001b89915e1b8ae78dbfa10f064cb84c3b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7300c850_519a714d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-12-11T16:36:02Z",
+      "side": 1,
+      "message": "It was only used by \u003c\u003dmsm8974, I don\u0027t think we should add it back",
+      "parentUuid": "a0c7cd2d_9b0d3d3b",
+      "revId": "277cf001b89915e1b8ae78dbfa10f064cb84c3b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
