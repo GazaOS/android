@@ -16,6 +16,24 @@
       "message": "Can we add also hardware/google/easel - needed (at least) for pixel 2 camera?",
       "revId": "43a2c69b844f3862031ace782f64a82119d127dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c12969b_89bdc530",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-12-19T16:52:19Z",
+      "side": 1,
+      "message": "Gonna move the headers to qcom (AOSP) cam Hal for 8998 instead.",
+      "parentUuid": "0bcf79d9_9f992027",
+      "revId": "43a2c69b844f3862031ace782f64a82119d127dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
