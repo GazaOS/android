@@ -16,6 +16,24 @@
       "message": "nit: commitmsg typos",
       "revId": "5ccdc676f706be68dd4751980992be3588a632f0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f30d92d8_c049545d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-12-22T01:51:19Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "197f0b98_4628ac28",
+      "revId": "5ccdc676f706be68dd4751980992be3588a632f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
