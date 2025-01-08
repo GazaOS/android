@@ -33,6 +33,24 @@
       "message": "ekkehard@ektus-mini-pc:~/nougat/lineage14$ repopick -f 414647\nApplying change number 414647...\nERROR: For 414647, could not determine the project path for project LineageOS/android_external_giflib",
       "revId": "be12600135c97f948a9935b06c95802cb7ff0e62",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c39be7ad_32b6a020",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2025-01-08T19:31:45Z",
+      "side": 1,
+      "message": "Try this:\n\ncd android\n\ngit fetch https://github.com/LineageOS/android refs/changes/37/414637/1 \u0026\u0026 git cherry-pick FETCH_HEAD\n\ncd ../.repo/manifests\n\ngit fetch https://github.com/LineageOS/android refs/changes/37/414637/1 \u0026\u0026 git cherry-pick FETCH_HEAD\n\ncd ../..\n\nrepo sync --force-sync external/giflib",
+      "parentUuid": "3e5a99d1_27c929c7",
+      "revId": "be12600135c97f948a9935b06c95802cb7ff0e62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
