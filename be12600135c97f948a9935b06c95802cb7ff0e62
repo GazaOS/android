@@ -16,6 +16,23 @@
       "message": "repopick_topic fails to pick 2025-01, same as 2022-09:\nekkehard@ektus-mini-pc:~/nougat/lineage14$ repopick_topic n-asb-2025-01\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n100   896  100   896    0     0   5789      0 --:--:-- --:--:-- --:--:--  5780\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n100    13  100    13    0     0     84      0 --:--:-- --:--:-- --:--:--    84\nbase64: ungültige Eingabe\nPatch is empty.\nWhen you have resolved this problem, run \"git am --continue\".\nIf you prefer to skip this patch, run \"git am --skip\" instead.\nTo restore the original branch and stop patching, run \"git am --abort\".\nError: can not apply change 2 to .repo/manifests\nAbgemeldet\nConnection to 192.168.0.26 closed.\n\nI\u0027ll go ahead and pick manually.",
       "revId": "be12600135c97f948a9935b06c95802cb7ff0e62",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e5a99d1_27c929c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25691
+      },
+      "writtenOn": "2025-01-08T18:22:52Z",
+      "side": 1,
+      "message": "ekkehard@ektus-mini-pc:~/nougat/lineage14$ repopick -f 414647\nApplying change number 414647...\nERROR: For 414647, could not determine the project path for project LineageOS/android_external_giflib",
+      "revId": "be12600135c97f948a9935b06c95802cb7ff0e62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
