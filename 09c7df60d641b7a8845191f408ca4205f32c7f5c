@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f25498a_f165e1d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25691
+      },
+      "writtenOn": "2025-01-09T06:43:35Z",
+      "side": 1,
+      "message": "Single-picking the changes and build were successful, but repopick_topic n-asb-20225-01 still fails with \"base64: invalid input\nPatch is empty.\"",
+      "revId": "09c7df60d641b7a8845191f408ca4205f32c7f5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
