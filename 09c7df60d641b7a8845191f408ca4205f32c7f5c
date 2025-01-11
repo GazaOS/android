@@ -16,6 +16,23 @@
       "message": "Single-picking the changes and build were successful, but repopick_topic n-asb-20225-01 still fails with \"base64: invalid input\nPatch is empty.\"",
       "revId": "09c7df60d641b7a8845191f408ca4205f32c7f5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c875b70_f2e6e052",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25691
+      },
+      "writtenOn": "2025-01-11T12:28:48Z",
+      "side": 1,
+      "message": "Has been running on my Moto G5 Cedric for two days now. THANK YOU!",
+      "revId": "09c7df60d641b7a8845191f408ca4205f32c7f5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
