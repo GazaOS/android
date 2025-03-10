@@ -430,7 +430,7 @@
   <project path="external/perfmark" name="platform/external/perfmark" groups="pdk" remote="aosp" />
   <project path="external/pffft" name="platform/external/pffft" groups="pdk" remote="aosp" />
   <project path="external/piex" name="platform/external/piex" groups="pdk" remote="aosp" />
-  <project path="external/pigweed" name="platform/external/pigweed" groups="pdk" remote="aosp" />
+  <project path="external/pigweed" name="LineageOS/android_external_pigweed" groups="pdk" />
   <project path="external/ply" name="platform/external/ply" groups="pdk" remote="aosp" />
   <project path="external/private-join-and-compute" name="platform/external/private-join-and-compute" groups="pdk" remote="aosp" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk,sysui-studio" remote="aosp" />
