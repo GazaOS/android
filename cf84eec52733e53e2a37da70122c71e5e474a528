@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2f1c973_58162cb7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2025-03-14T10:38:37Z",
+      "side": 1,
+      "message": "this is required by the upcoming sm8750 devices, I think 22.2 migration is a good chance to have it tested",
+      "revId": "cf84eec52733e53e2a37da70122c71e5e474a528",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
