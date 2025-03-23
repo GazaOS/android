@@ -36,7 +36,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="crdroidandroid/android_build_soong" groups="pdk,tradefed" remote="crdroid" >
+  <project path="build/soong" name="crdroidandroid/android_build_soong" groups="pdk,tradefed,sysui-studio" remote="crdroid" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
