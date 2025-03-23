@@ -16,6 +16,24 @@
       "message": "https://android.googlesource.com/platform/manifest/+/d71b092657bb81b74f2b8c61701a9fede7b33762",
       "revId": "1172644f85a94c4d6a82a01969b875132ac53254",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b83ef3a_227f190e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-03-23T12:20:27Z",
+      "side": 1,
+      "message": "I\u0027m aware, since we don\u0027t track AOSP manifest history directly, all changes here are done manually because they don\u0027t apply without conflicts anyway.",
+      "parentUuid": "87215788_9e990957",
+      "revId": "1172644f85a94c4d6a82a01969b875132ac53254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
