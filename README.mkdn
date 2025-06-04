@@ -1,101 +1,69 @@
-#![alt text][logo]
+GazaOS base on Crdroid 
+===========
 
-#[logo]:https://crdroid.net/img/logo.png "GazaOS"
+Getting started
+---------------
 
-## 1. Grabbing the source ##
+To get started with Android/Crdroid/GazaOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
 
-[Repo](http://source.android.com/source/developing.html) is a tool provided by Google that
-simplifies using [Git](http://git-scm.com/book) in the context of the Android source.
-
-### 1.1 Installing dependencies and Repo ###
-
-Several packages are needed in order to build crDroid
-```
-sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32ncurses-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses6 libncurses-dev libsdl1.2-dev libssl-dev libwxgtk3.2-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
-```
-
-Install Repo tool
+### Spinning up the environment
+--------------
 ```bash
-# Make a directory where Repo will be stored and add it to the path
-mkdir ~/bin
-PATH=~/bin:$PATH
-
-# Download Repo itself
-```
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-```
-# Make Repo executable
-```
-chmod a+x ~/bin/repo
+bash <(curl -sL https://raw.githubusercontent.com/akhilnarang/scripts/refs/heads/master/setup/android_build_env.sh)
 ```
 
-## 1.2 Initializing Repo
-Create a directory for the source files
-# This can be located anywhere (as long as the fs is case-sensitive)
+Start Syncing
+---------------
+To start syncing, create a directory and move in that directoery with the command below.
+```bash
+mkdir GazaOS && cd GazaOS
 ```
-mkdir GazaOS
-cd GazaOS
-```
-# Install Repo in the created directory
-```
+
+To initialize your local repository using the aospb trees, use a command like this:
+```bash
 repo init -u https://github.com/GazaOS/android.git -b 15.0 --git-lfs
-
 ```
-# Notes
-This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
-first run, it is expected to take a while as it will download all the required Android source files
-and their change histories.
-
-# Let Repo take care of all the hard work
+Alternatively in case you have limited network/disk space resources:
+```bash
+repo init -u https://github.com/GazaOS/android.git -b 15.2 --git-lfs --depth=1
 ```
-repo sync
+Then to sync up:
+```bash
+# The -j# option specifies the number of concurrent download threads to run.
+# Default sync thread count is set as 8
+# In case of sync errors, you may need to adjust this value as per you need
 
+repo sync --force-sync --no-clone-bundle --no-tags
 ```
-# Run to prepare our devices list
+Start Building
+---------------
+To start the building process, setup the environment by executing the below command.
+```bash
+source build/envsetup.sh
 ```
-. build/envsetup.sh
+Use the below command to perform lunch action, replace *$device_codename* as required for your device. 
 
+```bash
+breakfast $device_codename
 ```
-# ... now run
+To start the build:
+```bash
+brunch $device_codename
 ```
-brunch devicecodename
+**Note**: By default build type is `user`
 
-```
-
-## 2. Contributions ##
-
-To submit changes/patches, please send a pull request on GitHub. We will review and merge.
-
-## 3. How to become an Official Maintainer ##
-
-Make sure you can follow our [rules-and-guidelines](https://github.com/crdroidandroid/rules-and-guidelines), then if all is right, just message Gabriel over [Telegram](https://telegram.me/gwolf2u) with the device you want to maintain.
-
-## 4. crDroid features / overlays, translations, forum template and OTA ##
-
-### 4.1 crDroid features / overlays ###
-Set those overlays to proper paths
-
-Frameworks base  
-```
-overlay/frameworks/base/core/res/res/values/config.xml```  
-[https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/core/res/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/core/res/res/values/cr_config.xml)
-```
-SystemUI  
-```
-overlay/frameworks/base/packages/SystemUI/res/values/config.xml```  
-[https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/packages/SystemUI/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/packages/SystemUI/res/values/cr_config.xml)
-```
-### 4.2 Translations ###
-We use Crowdin for translations since it is easy and everyone can do it.  
-To help out click [here](https://github.com/crdroidandroid/crdroid_features#translations).
-
-### 4.3 Forum template ###
-Build ready? Tested all features and translations are smooth?  
-Why not share your build over your beloved forums?  
-To do so, we have made a [small template](https://github.com/crdroidandroid/crdroid_features/blob/15.0/ForumPostTemplate) to help out. Just edit what you need and let the downloads roll. :sunglasses:
-
-### 4.4 OTA ###
-So posted on forums and your users are enjoying your build.  
-Well you can help out your users by letting them know when you fix stuff in your builds with the help of our OTA app.   
-Since crDroid Oreo, if you want to be on the official maintainers list, you'll need to provide OTA access.  
-You can set it up really easy by reading [android_vendor_crDroidOTA](https://github.com/crdroidandroid/android_vendor_crDroidOTA/blob/15.0/README.md) repo description.
+### Credits
+--------------
+ * [**AOSP**](https://android.googlesource.com)
+ * [**LineageOS**](https://github.com/LineageOS)
+ * [**AOSPA**](https://github.com/AOSPA)
+ * [**HentaiOS**](https://github.com/hentaios)
+ * [**Project Radiant**](https://github.com/ProjectRadiant)
+ * [**PixelOS-AOSP**](https://github.com/PixelOS-AOSP)
+ * [**StatixOS**](https://github.com/StatiXOS)
+ * [**Project Pixelage**](https://github.com/ProjectPixelage)
+ * [**cAOSP**](https://github.com/c0smic-Lab)
+ * [**SomethingOS**](https://github.com/SomethingOS)
+ * [**DerpFest-AOSP**](https://github.com/DerpFest-AOSP)
+ * [**aospb-project**](https://github.com/aospb-project)
+ * ... And the list never ends.
