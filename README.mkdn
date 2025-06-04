@@ -54,11 +54,11 @@ repo sync
 # Run to prepare our devices list
 ```
 . build/envsetup.sh
-
+```
 # ... now run
 ```
 brunch devicecodename
-
+```
 
 ## 2. Contributions ##
 
