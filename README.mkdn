@@ -58,7 +58,7 @@ repo sync
 # ... now run
 ```
 brunch devicecodename
-```
+``
 
 ## 2. Contributions ##
 
@@ -74,13 +74,15 @@ Make sure you can follow our [rules-and-guidelines](https://github.com/crdroidan
 Set those overlays to proper paths
 
 Frameworks base  
-```overlay/frameworks/base/core/res/res/values/config.xml```  
+```
+overlay/frameworks/base/core/res/res/values/config.xml```  
 [https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/core/res/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/core/res/res/values/cr_config.xml)
-
+```
 SystemUI  
-```overlay/frameworks/base/packages/SystemUI/res/values/config.xml```  
+```
+overlay/frameworks/base/packages/SystemUI/res/values/config.xml```  
 [https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/packages/SystemUI/res/values/cr_config.xml](https://github.com/crdroidandroid/android_frameworks_base/blob/15.0/packages/SystemUI/res/values/cr_config.xml)
-
+```
 ### 4.2 Translations ###
 We use Crowdin for translations since it is easy and everyone can do it.  
 To help out click [here](https://github.com/crdroidandroid/crdroid_features#translations).
