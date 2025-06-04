@@ -52,6 +52,11 @@ brunch $device_codename
 ```
 **Note**: By default build type is `user`
 
+### GazaOS maintenr name supported yoou can add your name 
+**like ```lineage_$product.mk add here
+```
+MAINTAINER_GAZAOS := yourname 
+```
 ### Credits
 --------------
  * [**AOSP**](https://android.googlesource.com)
