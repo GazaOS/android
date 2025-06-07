@@ -35,6 +35,15 @@ Then to sync up:
 
 repo sync --force-sync --no-clone-bundle --no-tags
 ```
+To build Gapps use flag:
+```bash
+WITH_GMS := true
+```
+GazaOS maintenr name supported yoou can add your name 
+**like`lineage_$product.mk` add here**
+```bash
+MAINTAINER_GAZAOS := yourname 
+```
 Start Building
 ---------------
 To start the building process, setup the environment by executing the below command.
@@ -50,13 +59,8 @@ To start the build:
 ```bash
 brunch $device_codename
 ```
-**Note**: By default build type is `user`
+**Note**: By default build type is `codename`
 
-### GazaOS maintenr name supported yoou can add your name 
-**like ```lineage_$product.mk add here
-```
-MAINTAINER_GAZAOS := yourname 
-```
 ### Credits
 --------------
  * [**AOSP**](https://android.googlesource.com)
