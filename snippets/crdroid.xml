@@ -19,6 +19,12 @@
            sync-j="4"
            revision="refs/heads/15.0" />
 
+  <remote  name="dark.phnx12"
+           fetch="https://gitlab.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/fifteen" />
+
   <!-- crDroid additions -->
   <project path="android" name="crdroidandroid/android" remote="crdroid" />
 
@@ -107,5 +113,7 @@
   <project path="vendor/certification" name="crdroidandroid/android_vendor_certification" remote="crdroid" />
   <project path="vendor/crDroidOTA" name="GazaOS/android_vendor_GazaOSOTA" remote="GazaOS" />
   <project path="vendor/lineage" name="GazaOS/android_vendor_GazaOS" remote="GazaOS" />
-
+<!-- gapps -->
+  <project path="vendor/google/gms" name="dark.phnx12/vendor_google_gms" remote="dark.phnx12" />
+  <project path="vendor/google/pixel" name="dark.phnx12/vendor_google_pixel" remote="dark.phnx12" />
 </manifest>
