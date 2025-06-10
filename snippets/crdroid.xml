@@ -72,7 +72,8 @@
   <project path="hardware/qcom-caf/sm8350/display" name="crdroidandroid/android_hardware_qcom_display" groups="qcom" revision="15.0-caf-sm8350" />
 
   <project path="lineage-sdk" name="GazaOS/android_lineage-sdk" remote="GazaOS" />
-
+  
+  <project path="packages/apps/ViPER4AndroidFX" name="GazaOS/android_packages_apps_ViPER4AndroidFX" remote="GazaOS" revision="v4a" />
   <project path="packages/apps/Backgrounds" name="crdroidandroid/android_packages_apps_Backgrounds" remote="crdroid" />
   <project path="packages/apps/ColumbusService" name="crdroidandroid/android_packages_apps_ColumbusService" remote="crdroid" />
   <project path="packages/apps/crDroidSettings" name="GazaOS/android_packages_apps_GazaOSSettings" remote="GazaOS" />
