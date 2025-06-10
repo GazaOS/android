@@ -44,6 +44,13 @@ GazaOS maintenr name supported yoou can add your name
 ```bash
 MAINTAINER_GAZAOS := yourname 
 ```
+🎵 ViperFX Integration
+
+To include **ViPER4AndroidFX**, enable the following flag in your device's `lineage_device.mk`:
+
+```bash
+TARGET_INCLUDE_VIPERFX := true
+```
 Start Building
 ---------------
 To start the building process, setup the environment by executing the below command.
