@@ -82,4 +82,6 @@ brunch $device_codename
  * [**SomethingOS**](https://github.com/SomethingOS)
  * [**DerpFest-AOSP**](https://github.com/DerpFest-AOSP)
  * [**aospb-project**](https://github.com/aospb-project)
+ * [**custom-crdroid**](https://github.com/custom-crdroid)
+ * [**Project Matrixx**](https://github.com/ProjectMatrixx)
  * ... And the list never ends.
