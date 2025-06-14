@@ -1,4 +1,4 @@
-GazaOS base on Crdroid 
+GazaOS  
 ===========
 
 Getting started
