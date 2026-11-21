@@ -136,9 +136,11 @@
   <project path="vendor/google/overlays/ThemeIcons" name="Lunaris-AOSP/vendor_google_overlays_ThemeIcons" remote="lunaris" />
   <project path="vendor/bcr" name="Lunaris-AOSP/vendor_bcr" remote="lunaris" />
 
-  <!-- GazaOS & Gtajisan Additions -->
+  <!-- GazaOS Additions -->
   <project path="packages/apps/ViPER4AndroidFX" name="GazaOS/android_packages_apps_ViPER4AndroidFX" remote="GazaOS" revision="v4a" />
+  <!-- Pending external dependencies (uncomment once repos are pushed)
   <project path="hardware/dolby" name="Gtajisan/hardware_dolby" remote="Gtajisan" revision="sony-1.0" />
   <project path="prebuilts/calyx/datura" name="Gtajisan/prebuilts_calyx_datura" remote="Gtajisan" revision="15-qpr2" />
   <project path="vendor/lineage-priv/keys" name="Gtajisan/vendor_lineage-priv_keys" remote="Gtajisan" revision="16.2" />
+  -->
 </manifest>
