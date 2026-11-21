@@ -23,8 +23,7 @@ Set up the build environment:
 
 Lunch a target:
 ```bash
-lunch gaza_<device_codename>-bp4a-user
-# or: lunch lineage_<device_codename>-bp4a-user
+lunch lineage_<device_codename>-bp4a-user
 ```
 
 Start compiling:
