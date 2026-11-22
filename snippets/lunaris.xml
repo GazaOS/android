@@ -57,7 +57,7 @@
   <project path="external/zstd" name="Lunaris-AOSP/external_zstd" groups="pdk" remote="lunaris" />
 
   <project path="frameworks/av" name="Lunaris-AOSP/frameworks_av" groups="pdk,sysui-studio" remote="lunaris" />
-  <project path="frameworks/base" name="Lunaris-AOSP/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
+  <project path="frameworks/base" name="GazaOS/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="GazaOS" />
   <project path="frameworks/libs/systemui" name="Lunaris-AOSP/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
   <project path="frameworks/native" name="Lunaris-AOSP/frameworks_native" groups="pdk" remote="lunaris" />
   <project path="frameworks/opt/net/wifi" name="Lunaris-AOSP/frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="lunaris" />
@@ -78,7 +78,7 @@
   <project path="packages/apps/AxThemeStore" name="Lunaris-AOSP/packages_apps_AxThemeStore" remote="lunaris" />
   <project path="packages/apps/BtHelper" name="Lunaris-AOSP/packages_apps_BtHelper" remote="lunaris" />
   <project path="packages/apps/ColumbusService" name="Lunaris-AOSP/packages_apps_ColumbusService" remote="lunaris" />
-  <project path="packages/apps/Singularity" name="Lunaris-AOSP/packages_apps_Singularity" remote="lunaris" />
+  <project path="packages/apps/Singularity" name="GazaOS/packages_apps_Singularity" remote="GazaOS" />
   <project path="packages/apps/Contacts" name="Lunaris-AOSP/packages_apps_Contacts" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/DeskClock" name="Lunaris-AOSP/packages_apps_DeskClock" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/Dialer" name="Ghosuto/packages_apps_Dialer" groups="pdk-fs" remote="ghosuto" />
@@ -125,7 +125,7 @@
   <project path="vendor/extras" name="Lunaris-AOSP/vendor_extras" remote="lunaris" />
   <project path="vendor/prebuilts" name="Lunaris-AOSP/vendor_prebuilts" remote="lunaris" />
   <project path="vendor/certification" name="Lunaris-AOSP/vendor_certification" remote="lunaris" />
-  <project path="vendor/lineage" name="Lunaris-AOSP/vendor_lineage" remote="lunaris" />
+  <project path="vendor/lineage" name="GazaOS/vendor_lineage" remote="GazaOS" />
   <project path="vendor/pixel/extract-utils" name="GhosutoX/vendor_pixel_extract-utils" remote="lunaris-gitlab" >
     <linkfile src="extract-all.sh" dest="vendor/pixel/extract-all.sh" />
   </project>
