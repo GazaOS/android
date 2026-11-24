@@ -40,7 +40,7 @@
 
   <project path="bionic" name="Lunaris-AOSP/bionic" groups="pdk" remote="lunaris" />
 
-  <project path="bootable/recovery" name="Lunaris-AOSP/bootable_recovery" groups="pdk" remote="lunaris" />
+  <project path="bootable/recovery" name="GazaOS/bootable_recovery" groups="pdk" remote="GazaOS" />
 
   <project path="device/lineage/sepolicy" name="Lunaris-AOSP/device_lineage_sepolicy" remote="lunaris" />
 
