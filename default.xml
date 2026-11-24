@@ -1027,6 +1027,8 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
 
-  <include name="snippets/lunaris.xml" />
+  <include name="snippets/gazaos.xml" />
+  <!-- Backwards compatibility -->
+  <!-- <include name="snippets/lunaris.xml" /> -->
   <include name="snippets/lineage.xml" />
 </manifest>
