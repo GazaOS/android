@@ -137,6 +137,7 @@
   <project path="vendor/bcr" name="Lunaris-AOSP/vendor_bcr" remote="lunaris" />
 
   <!-- GazaOS Additions -->
+  <project path="device/xiaomi/stone" name="GazaOS/device_xiaomi_stone" remote="GazaOS" revision="16.2" />
   <project path="packages/apps/ViPER4AndroidFX" name="GazaOS/android_packages_apps_ViPER4AndroidFX" remote="GazaOS" revision="16.2" />
   <project path="hardware/dolby" name="Gtajisan/hardware_dolby" remote="Gtajisan" revision="sony-1.0" />
   <project path="prebuilts/calyx/datura" name="Gtajisan/prebuilts_calyx_datura" remote="Gtajisan" revision="15-qpr2" />
