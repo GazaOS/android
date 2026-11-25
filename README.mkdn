@@ -1,6 +1,6 @@
 # GazaOS Manifest
 
-GazaOS is a custom ROM based on AOSP and Lunaris-AOSP, integrating customizations from crDroid, LineageOS, and other leading Android open-source distributions.
+GazaOS is a hybrid custom ROM built on AOSP, combining core repositories from **Lunaris-AOSP**, **crDroid**, and **LineageOS** with **GazaOS** system logic, Gaza Lab customization, and a Free Palestine humanitarian solidarity motive.
 
 ## Initialize local repository
 
