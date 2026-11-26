@@ -18,26 +18,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 ## Device Trees
 
-GazaOS core ROM repositories stay decoupled from device-specific trees. Add your device, vendor, kernel, and hardware trees (such as Mayu or custom device trees) under `.repo/local_manifests/` or via `breakfast <codename>`:
-
-```bash
-. build/envsetup.sh
-```
-
-Example `.repo/local_manifests/roomservice.xml` using Mayu (`Mayuresh2543`) trees for `stone` (Redmi Note 12 5G / POCO X5 5G):
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <remote name="mayuresh" fetch="https://github.com/Mayuresh2543" clone-depth="1" />
-  <remote name="lineage" fetch="https://github.com/LineageOS" clone-depth="1" />
-
-  <project path="device/xiaomi/stone" remote="mayuresh" name="device_xiaomi_stone" revision="16.2" />
-  <project path="vendor/xiaomi/stone" remote="mayuresh" name="vendor_xiaomi_stone" revision="16.2" />
-  <project path="kernel/xiaomi/stone" remote="mayuresh" name="kernel_xiaomi_stone" revision="16.2" />
-  <project path="hardware/xiaomi" remote="lineage" name="android_hardware_xiaomi" revision="lineage-23.2" />
-</manifest>
-```
+GazaOS core ROM repositories stay decoupled from device-specific trees. Place your device, vendor, kernel, and hardware trees under `.repo/local_manifests/` or via `breakfast <codename>` before building.
 
 ## Lite Build Configuration Flags
 
