@@ -24,6 +24,21 @@ GazaOS core ROM repositories stay decoupled from device-specific trees. Add your
 . build/envsetup.sh
 ```
 
+Example `.repo/local_manifests/roomservice.xml` using Mayu (`Mayuresh2543`) trees for `stone` (Redmi Note 12 5G / POCO X5 5G):
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="mayuresh" fetch="https://github.com/Mayuresh2543" clone-depth="1" />
+  <remote name="lineage" fetch="https://github.com/LineageOS" clone-depth="1" />
+
+  <project path="device/xiaomi/stone" remote="mayuresh" name="device_xiaomi_stone" revision="16.2" />
+  <project path="vendor/xiaomi/stone" remote="mayuresh" name="vendor_xiaomi_stone" revision="16.2" />
+  <project path="kernel/xiaomi/stone" remote="mayuresh" name="kernel_xiaomi_stone" revision="16.2" />
+  <project path="hardware/xiaomi" remote="lineage" name="android_hardware_xiaomi" revision="lineage-23.2" />
+</manifest>
+```
+
 ## Lite Build Configuration Flags
 
 Heavy add-on packages are **disabled by default** (`?= false`) in `vendor/lineage/config/lunaris.mk` to keep system images small and fast. Override any of these in your device makefile (`BoardConfig.mk` / `lineage_<device>.mk`) as needed:
@@ -46,4 +61,59 @@ Heavy add-on packages are **disabled by default** (`?= false`) in `vendor/lineag
 . build/envsetup.sh
 lunch lineage_<device_codename>-bp4a-user
 m bacon
+```
+
+## Device Tree Integration & Overlay Guide
+
+### Maintainer & Device Props
+
+Define in your device's `lineage_<codename>.mk` (`PRODUCT_PRODUCT_PROPERTIES`):
+
+```makefile
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.gazaos.maintainer=YourName \
+    ro.gazaos.device=<codename>
+```
+
+### About Phone Device Info Strings (Overlay)
+
+`GazaOsAboutInfoPreferenceController` automatically populates hardware summary fields on first boot, or you can override them cleanly in your device tree overlay (`overlay/<device>/packages/apps/Settings/res/values/lunaris_strings.xml`):
+
+```xml
+<resources>
+    <string name="lunaris_device_message" translatable="false">Redmi Note 12 5G</string>
+    <string name="lunaris_processor_code_message" translatable="false">Snapdragon 4 Gen 1</string>
+    <string name="lunaris_battery_type_message" translatable="false">5000 mAh · 33W Fast Charge</string>
+    <string name="lunaris_screen_message" translatable="false">6.67" AMOLED · 120 Hz</string>
+</resources>
+```
+
+Reference example overlay commit/file from upstream base:
+- [NTSettingsResTarget/res/values/lunaris_strings.xml](https://github.com/Pong-Development/device_nothing_Pong/blob/luna/overlay/pong/NTSettingsResTarget/res/values/lunaris_strings.xml)
+
+### Additional Device & Display Flags
+
+```makefile
+# UDFPS & GMS
+TARGET_CUSTOM_UDFPS := true
+WITH_GMS := true
+WITH_GMS_COMMS_SUITE := false
+WITH_PIXEL_LAUNCHER := false
+TARGET_USE_MAPS := true
+TARGET_USE_FILES := true
+TARGET_USE_GPHOTOS := false
+TARGET_USE_WALLPAPERS := false
+
+# Display & SurfaceFlinger tuning
+USE_REALITY_ENGINE := true
+SURFACE_FLINGER_BOOST := true
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+```
+
+To cap AOD & Ambient Display refresh rate via SystemUI overlay (`overlay/.../frameworks/base/packages/SystemUI/res/values/config.xml`):
+
+```xml
+<!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+<integer name="config_aodMaxRefreshRate">60</integer>
 ```
