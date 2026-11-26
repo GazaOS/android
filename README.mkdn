@@ -1,32 +1,49 @@
-# GazaOS Manifest
+# GazaOS Android Source Manifest
 
-GazaOS is a hybrid custom ROM built on AOSP, combining core repositories from **Lunaris-AOSP**, **crDroid**, and **LineageOS** with **GazaOS** system logic, Gaza Lab customization, and a Free Palestine humanitarian solidarity motive.
+GazaOS is a **HyperOS-Hybrid Lite AOSP 16.2** custom ROM combining upstream stability from **Lunaris-AOSP**, **crDroid**, and **LineageOS** with **GazaOS** system styling, **Gaza Lab**, modular Quick Settings, lightweight HyperOS 4 media, and a **Free Palestine** humanitarian solidarity mission.
 
-## Initialize local repository
+## Quick Sync
+
+Initialize the GazaOS 16.2 manifest:
 
 ```bash
 repo init -u https://github.com/GazaOS/android -b 16.2 --git-lfs
 ```
 
-## Sync
+Sync source trees cleanly (shallow, current branch, no tags):
 
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-## Build
+## Device Trees
 
-Set up the build environment:
+GazaOS core ROM repositories stay decoupled from device-specific trees. Add your device, vendor, kernel, and hardware trees (such as Mayu or custom device trees) under `.repo/local_manifests/` or via `breakfast <codename>`:
+
 ```bash
 . build/envsetup.sh
 ```
 
-Lunch a target:
-```bash
-lunch lineage_<device_codename>-bp4a-user
-```
+## Lite Build Configuration Flags
 
-Start compiling:
+Heavy add-on packages are **disabled by default** (`?= false`) in `vendor/lineage/config/lunaris.mk` to keep system images small and fast. Override any of these in your device makefile (`BoardConfig.mk` / `lineage_<device>.mk`) as needed:
+
+| Flag | Default | Description |
+| :--- | :--- | :--- |
+| `TARGET_LOW_END_BLUR` | `true` | Lightweight `kawase_darkmoon` blur algorithm |
+| `TARGET_INCLUDE_AX_THEME_STORE` | `false` | Optional theme store app |
+| `TARGET_INCLUDE_BATTERY_STATS` | `false` | Optional battery stats viewer app |
+| `TARGET_INCLUDE_GAMESPACE` | `false` | Optional GameSpace overlay app |
+| `TARGET_INCLUDE_FREEFORM` | `false` | Optional LMO Freeform & sidebar |
+| `TARGET_INCLUDE_OMNISTYLE` | `false` | Optional OmniStyle header packs |
+| `TARGET_INCLUDE_V4A` | `true` (`!= true` to exclude) | Set `TARGET_EXCLUDE_V4A := true` to omit ViPER4AndroidFX |
+| `TARGET_EXCLUDE_HYPEROS_WALLPAPERS` | `false` | Set `true` to omit `GazaOSWallpapers` |
+| `WITH_GMS` | `false` | Set `true` to bundle Pixel GMS suite |
+
+## Build
+
 ```bash
+. build/envsetup.sh
+lunch lineage_<device_codename>-bp4a-user
 m bacon
 ```
