@@ -162,7 +162,7 @@
 
   <!-- GazaOS Additions -->
   <project path="packages/apps/ViPER4AndroidFX" name="GazaOS/android_packages_apps_ViPER4AndroidFX" remote="GazaOS" revision="16.2" />
-  <project path="hardware/dolby" name="Gtajisan/hardware_dolby" remote="Gtajisan" revision="sony-1.0" />
-  <project path="prebuilts/calyx/datura" name="Gtajisan/prebuilts_calyx_datura" remote="Gtajisan" revision="15-qpr2" />
-  <project path="vendor/lineage-priv/keys" name="Gtajisan/vendor_lineage-priv_keys" remote="Gtajisan" revision="16.2" />
+  <project path="hardware/dolby" name="GazaOS/hardware_dolby" remote="Gtajisan" revision="sony-1.0" />
+  <project path="prebuilts/calyx/datura" name="GazaOS/prebuilts_calyx_datura" remote="Gtajisan" revision="15-qpr2" />
+  <project path="vendor/lineage-priv/keys" name="GazaOS/vendor_lineage-priv_keys" remote="Gtajisan" revision="16.2" />
 </manifest>
